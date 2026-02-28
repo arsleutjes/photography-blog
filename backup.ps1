@@ -13,7 +13,6 @@ $mainArgs = @(
   $destination                   # Destination root
   '/E'                           # Copy subdirectories, including empty ones
   '/COPY:DAT'                    # Copy data, attributes, and timestamps only
-  '/L'                           # Dry-run (list only, no file changes)
   '/XD'                          # Exclude directories (next entries)
   $recycleBinPath                # Exclude Windows recycle bin
   $systemVolumeInfoPath          # Exclude Windows system metadata folder
@@ -34,7 +33,6 @@ $logCopyArgs = @(
   $logFileName # File to copy
   '/COPY:DAT'  # Copy data, attributes, and timestamps only
   '/TEE'       # Write output to console and log file
-  '/L'         # Dry-run (list only)
 )
 
 & robocopy @logCopyArgs
