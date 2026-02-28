@@ -6,30 +6,39 @@ s = {
 	value = {
 		items = {
 			{
+				-- Position
 				anchor = "bottomright",
 				horizontalPadding = 0.03,
+				verticalPadding = 0.03,
+
+				-- Text watermark content
 				kind = "text",
-				opacity = 0.5,
-				orientation = "AB",
-				sizeKind = "relative",
-				sizeRelativeAmount = 0.1,
 				text = "© Arwin Sleutjes",
-				textColorBlue = 1,
-				textColorGreen = 1,
-				textColorRed = 1,
 				textFontName = "Adobe Clean-Regular",
 				textHorizontalAlignment = "right",
-				textScalable = true,
-				textShadowAngle = 270,
-				textShadowColorBlue = 0,
-				textShadowColorGreen = 0,
-				textShadowColorRed = 0,
-				textShadowEnabled = false,
-				textShadowOffset = 0.1,
-				textShadowOpacity = 0.8,
-				textShadowRadius = 0.2,
 				textVerticalAlignment = "top",
-				verticalPadding = 0.03,
+				textScalable = true,
+
+				-- Sizing and opacity
+				sizeKind = "relative",
+				sizeRelativeAmount = 0.1,
+				opacity = 0.5,
+				orientation = "AB",
+
+				-- Text colour
+				textColorRed = 1,
+				textColorGreen = 1,
+				textColorBlue = 1,
+
+				-- Text shadow
+				textShadowEnabled = false,
+				textShadowColorRed = 0,
+				textShadowColorGreen = 0,
+				textShadowColorBlue = 0,
+				textShadowOpacity = 0.8,
+				textShadowAngle = 270,
+				textShadowOffset = 0.1,
+				textShadowRadius = 0.2,
 			},
 		},
 	},

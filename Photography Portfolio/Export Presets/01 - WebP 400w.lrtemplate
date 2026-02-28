@@ -4,11 +4,11 @@ s = {
         title = "01 - WebP 400w",
         type = "Export",
         value = {
-                -- Destination: choose _site/photos/[year]/[slug]/ per export job
+                -- Destination: choose the output folder per export job
                 LR_export_destinationType = "specificFolder",
                 LR_export_useSubfolder = false,
 
-                -- File settings — WebP quality 85 (matches build.js sharp output)
+                -- File settings — WebP quality 85
                 LR_format = "WEBP",
                 LR_webp_quality = 0.85,
 
