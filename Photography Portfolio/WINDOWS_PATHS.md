@@ -1,13 +1,23 @@
-# Windows paths
+# Windows Paths
 
-## Lightroom Classic default export preset folder
+Copy/paste these paths directly into File Explorer.
+
+## Export Presets Folder (Lightroom Classic)
 
 ```text
-C:\Users\<YourUser>\AppData\Roaming\Adobe\Lightroom\Export Presets\User Presets\Photography Portfolio
+C:\Users\<YourUser>\AppData\Roaming\Adobe\Lightroom\Export Presets\User Presets
 ```
 
-## Lightroom Classic default watermark preset folder
+```text
+%APPDATA%\Adobe\Lightroom\Export Presets\User Presets
+```
+
+## Watermark Presets Folder (Lightroom Classic)
 
 ```text
-C:\Users\<YourUser>\AppData\Roaming\Adobe\Lightroom\Watermarks\Photography Portfolio
+C:\Users\<YourUser>\AppData\Roaming\Adobe\Lightroom\Watermarks
+```
+
+```text
+%APPDATA%\Adobe\Lightroom\Watermarks
 ```
