@@ -12,8 +12,9 @@
 
 ## Drive organization
 
-- `D:` Data / Primary drive.
-- `E:` Backup drive.
+- `C:` Fast SSD (500 GB), used for OS/apps.
+- `D:` Data drive (4 TB HDD).
+- `E:` Backup drive (4 TB HDD).
 - Do not manually edit backup contents on `E:`.
 
 ## Monthly backup
@@ -27,3 +28,25 @@
 
 3. Review console output for errors.
 4. Check the generated log on `D:` (file name format: `robocopy-yyyy-MM-ddTHH-mm-ss.log`).
+
+## Adobe Lightroom Classic
+
+### Catalog and files
+- Keep the Lightroom catalog (`.lrcat`) on `C:`.
+- Keep photo source files in `D:/Pictures/Raw/` using the project naming format above.
+- `E:` is the backup copy of `D:` images via `backup.ps1`.
+- Keep previews (`*.lrdata`) with the catalog folder on `C:`.
+
+### Import workflow
+- In Lightroom Classic Import, use destination folders under `D:/Pictures/Raw/`.
+- Use one project folder per import/shoot: `yyyy-mm-dd-Project_Name`.
+- Keep folder naming consistent between disk and Lightroom for easier recovery.
+
+### Lightroom Sync setting
+- Important: In `Edit > Preferences > Lightroom Sync`, under `Location`, set `Specify location for Lightroom's Synced images` to `D:\Pictures\Raw`.
+
+### Metadata and backups
+- Enable writing metadata changes to XMP in Lightroom Classic Catalog Settings.
+- In `Catalog Settings > Backups`, set `Backup Folder` to `D:\Pictures\Lightroom\Backups`.
+- In `Catalog Settings > Backups`, set `Back up catalog` to `Every time Lightroom exits`.
+- The live catalog stays on `C:`; these catalog backups on `D:` are included in the monthly `backup.ps1` run.
