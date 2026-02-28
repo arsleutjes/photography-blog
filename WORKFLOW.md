@@ -10,4 +10,4 @@
 
 # Backup once per month
 
-- See `./backup.bash`
+- See `./backup.ps1`
