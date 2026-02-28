@@ -37,7 +37,7 @@ s = {
 		-- File settings
 		export_bitDepth = 16,
 		export_colorSpace = "sRGB",
-		extensionCase = "uppercase",
+		extensionCase = "lowercase",
 		format = "JPEG",
 		jpeg_limitSize = 100,
 		jpeg_quality = 0.85,
