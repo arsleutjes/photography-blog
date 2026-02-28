@@ -11,6 +11,7 @@ s = {
                 -- File settings — WebP quality 85
                 LR_format = "WEBP",
                 LR_webp_quality = 0.85,
+                LR_extensionCase = "uppercase",
 
                 -- Colour space — sRGB required for web
                 LR_export_colorSpace = "sRGB",
