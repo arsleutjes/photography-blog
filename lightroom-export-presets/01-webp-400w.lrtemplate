@@ -1,0 +1,57 @@
+s = {
+        id = "a1b2c3d4-e5f6-7890-ab12-cd34ef56ab11",
+        internalName = "Photography Portfolio — 01 WebP 400w",
+        title = "01 - WebP 400w",
+        type = "Export",
+        value = {
+                -- Destination: choose _site/photos/[year]/[slug]/ per export job
+                LR_export_destinationType = "specificFolder",
+                LR_export_useSubfolder = false,
+
+                -- File settings — WebP quality 85 (matches build.js sharp output)
+                LR_format = "WEBP",
+                LR_webp_quality = 0.85,
+
+                -- Colour space — sRGB required for web
+                LR_export_colorSpace = "sRGB",
+                LR_export_bitDepth = "8",
+                LR_noColorProfile = false,
+
+                -- Sizing — constrain to 400 px wide; height unconstrained
+                LR_size_doConstrain = true,
+                LR_size_doNotEnlarge = true,
+                LR_size_resizeType = "wh",
+                LR_size_maxW = 400,
+                LR_size_maxH = 9999,
+                LR_size_units = "pixels",
+                LR_size_resolution = 72,
+                LR_size_resolutionUnits = "inch",
+
+                -- Output sharpening — screen / standard
+                LR_outputSharpeningApply = true,
+                LR_outputSharpeningMedia = "screen",
+                LR_outputSharpeningStrength = "standard",
+
+                -- File naming — appends "-400w" to the original filename:
+                --   cover.jpg  →  cover-400w.webp
+                --   01.jpg     →  01-400w.webp
+                LR_renamingTokensOn = true,
+                LR_tokens = "{{filename}}-400w",
+                LR_tokenBehavior = "renameBySequence",
+
+                -- Collision handling
+                LR_collisionHandling = "overwrite",
+
+                -- Metadata — strip location and face data
+                LR_minimizeEmbeddedMetadata = true,
+                LR_metadata_keywordOptions = "lightroomHierarchical",
+                LR_removeFaceMetadata = true,
+                LR_removeLocationMetadata = true,
+
+                -- Miscellaneous
+                LR_reimportExportedPhoto = false,
+                LR_watermarkingOn = false,
+                LR_watermarking_id = "",
+        },
+        version = 0,
+}
