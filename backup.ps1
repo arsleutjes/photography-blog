@@ -1,6 +1,7 @@
 $source = 'D:\'
 $destination = 'E:\'
-$logFileName = 'robocopy.log'
+$timestamp = Get-Date -Format 'yyyy-MM-ddTHH-mm-ss'
+$logFileName = "robocopy-$timestamp.log"
 $logFilePath = Join-Path $source $logFileName
 
 $mainArgs = @(
