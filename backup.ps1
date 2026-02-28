@@ -12,7 +12,7 @@ $mainArgs = @(
   $source                        # Source root
   $destination                   # Destination root
   '/E'                           # Copy subdirectories, including empty ones
-  '/COPYALL'                     # Copy all file info (data, attrs, timestamps, ACL, owner, audit)
+  '/COPY:DAT'                    # Copy data, attributes, and timestamps only
   '/L'                           # Dry-run (list only, no file changes)
   '/XD'                          # Exclude directories (next entries)
   $recycleBinPath                # Exclude Windows recycle bin
@@ -31,6 +31,7 @@ $logCopyArgs = @(
   $source      # Source for log file
   $destination # Destination for log file
   $logFileName # File to copy
+  '/COPY:DAT'  # Copy data, attributes, and timestamps only
   '/L'         # Dry-run (list only)
 )
 
