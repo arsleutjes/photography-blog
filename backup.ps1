@@ -8,6 +8,7 @@ $mainArgs = @(
   $source                        # Source root
   $destination                   # Destination root
   '/E'                           # Copy subdirectories, including empty ones
+  '/COPYALL'                     # Copy all file info (data, attrs, timestamps, ACL, owner, audit)
   '/L'                           # Dry-run (list only, no file changes)
   '/XD'                          # Exclude directories (next entries)
   'D:\$RECYCLE.BIN'              # Exclude Windows recycle bin
