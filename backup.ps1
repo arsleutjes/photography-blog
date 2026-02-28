@@ -19,6 +19,7 @@ $mainArgs = @(
   $systemVolumeInfoPath          # Exclude Windows system metadata folder
   '/XF'                          # Exclude files (next entry)
   $logFilePath                   # Exclude log file from main copy
+  '/TEE'                         # Write output to console and log file
   '/LOG+:' + $logFilePath        # Append output to log file
 )
 
@@ -32,6 +33,7 @@ $logCopyArgs = @(
   $destination # Destination for log file
   $logFileName # File to copy
   '/COPY:DAT'  # Copy data, attributes, and timestamps only
+  '/TEE'       # Write output to console and log file
   '/L'         # Dry-run (list only)
 )
 
