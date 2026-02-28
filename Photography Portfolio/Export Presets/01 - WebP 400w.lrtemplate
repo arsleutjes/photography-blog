@@ -50,8 +50,8 @@ s = {
 
                 -- Miscellaneous
                 LR_reimportExportedPhoto = false,
-                LR_watermarkingOn = false,
-                LR_watermarking_id = "",
+                LR_watermarkingOn = true,
+                LR_watermarking_id = "6CAF5308-D0C0-4932-826B-B26C523D4A16",
         },
         version = 0,
 }
