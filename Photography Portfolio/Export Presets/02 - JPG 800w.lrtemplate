@@ -1,16 +1,16 @@
 s = {
         id = "a1b2c3d4-e5f6-7890-ab12-cd34ef56ab12",
-        internalName = "Photography Portfolio — 02 WebP 800w",
-        title = "02 - WebP 800w",
+        internalName = "Photography Portfolio — 02 JPG 800w",
+        title = "02 - JPG 800w",
         type = "Export",
         value = {
                 -- Destination: choose the output folder per export job
                 LR_export_destinationType = "specificFolder",
                 LR_export_useSubfolder = false,
 
-                -- File settings — WebP quality 85
-                LR_format = "WEBP",
-                LR_webp_quality = 0.85,
+                -- File settings — JPEG quality 85
+                LR_format = "JPEG",
+                LR_jpeg_quality = 0.85,
                 LR_extensionCase = "uppercase",
 
                 -- Colour space — sRGB required for web
@@ -34,8 +34,8 @@ s = {
                 LR_outputSharpeningStrength = "standard",
 
                 -- File naming — appends "-800w" to the original filename:
-                --   cover.jpg  →  cover-800w.webp
-                --   01.jpg     →  01-800w.webp
+                --   cover.jpg  →  cover-800w.jpg
+                --   01.jpg     →  01-800w.jpg
                 LR_renamingTokensOn = true,
                 LR_tokens = "{{filename}}-800w",
                 LR_tokenBehavior = "renameBySequence",

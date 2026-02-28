@@ -1,16 +1,16 @@
 s = {
-        id = "a1b2c3d4-e5f6-7890-ab12-cd34ef56ab14",
-        internalName = "Photography Portfolio — 04 WebP 1920w",
-        title = "04 - WebP 1920w",
+        id = "a1b2c3d4-e5f6-7890-ab12-cd34ef56ab13",
+        internalName = "Photography Portfolio — 03 JPG 1200w",
+        title = "03 - JPG 1200w",
         type = "Export",
         value = {
                 -- Destination: choose the output folder per export job
                 LR_export_destinationType = "specificFolder",
                 LR_export_useSubfolder = false,
 
-                -- File settings — WebP quality 85
-                LR_format = "WEBP",
-                LR_webp_quality = 0.85,
+                -- File settings — JPEG quality 85
+                LR_format = "JPEG",
+                LR_jpeg_quality = 0.85,
                 LR_extensionCase = "uppercase",
 
                 -- Colour space — sRGB required for web
@@ -18,11 +18,11 @@ s = {
                 LR_export_bitDepth = "8",
                 LR_noColorProfile = false,
 
-                -- Sizing — constrain to 1920 px wide; height unconstrained
+                -- Sizing — constrain to 1200 px wide; height unconstrained
                 LR_size_doConstrain = true,
                 LR_size_doNotEnlarge = true,
                 LR_size_resizeType = "wh",
-                LR_size_maxW = 1920,
+                LR_size_maxW = 1200,
                 LR_size_maxH = 9999,
                 LR_size_units = "pixels",
                 LR_size_resolution = 72,
@@ -33,11 +33,11 @@ s = {
                 LR_outputSharpeningMedia = "screen",
                 LR_outputSharpeningStrength = "standard",
 
-                -- File naming — appends "-1920w" to the original filename:
-                --   cover.jpg  →  cover-1920w.webp
-                --   01.jpg     →  01-1920w.webp
+                -- File naming — appends "-1200w" to the original filename:
+                --   cover.jpg  →  cover-1200w.jpg
+                --   01.jpg     →  01-1200w.jpg
                 LR_renamingTokensOn = true,
-                LR_tokens = "{{filename}}-1920w",
+                LR_tokens = "{{filename}}-1200w",
                 LR_tokenBehavior = "renameBySequence",
 
                 -- Collision handling
