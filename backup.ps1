@@ -1,8 +1,12 @@
 $source = 'D:\'
 $destination = 'E:\'
+
 $timestamp = Get-Date -Format 'yyyy-MM-ddTHH-mm-ss'
 $logFileName = "robocopy-$timestamp.log"
 $logFilePath = Join-Path $source $logFileName
+
+$recycleBinPath = Join-Path $source '$RECYCLE.BIN'
+$systemVolumeInfoPath = Join-Path $source 'System Volume Information'
 
 $mainArgs = @(
   $source                        # Source root
@@ -11,8 +15,8 @@ $mainArgs = @(
   '/COPYALL'                     # Copy all file info (data, attrs, timestamps, ACL, owner, audit)
   '/L'                           # Dry-run (list only, no file changes)
   '/XD'                          # Exclude directories (next entries)
-  'D:\$RECYCLE.BIN'              # Exclude Windows recycle bin
-  'D:\System Volume Information' # Exclude Windows system metadata folder
+  $recycleBinPath                # Exclude Windows recycle bin
+  $systemVolumeInfoPath          # Exclude Windows system metadata folder
   '/XF'                          # Exclude files (next entry)
   $logFilePath                   # Exclude log file from main copy
   '/LOG+:' + $logFilePath        # Append output to log file
