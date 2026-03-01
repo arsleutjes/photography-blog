@@ -47,6 +47,14 @@ function Install-Presets {
         Copy-Item -Path $file.FullName -Destination $dest -Force
         Write-Host "  Copied: $($file.Name)"
     }
+
+    # Copy any image files (e.g. logos) alongside the presets
+    $images = Get-ChildItem -Path $Source -Include "*.png","*.jpg","*.jpeg","*.svg" -File
+    foreach ($img in $images) {
+        $dest = Join-Path $Destination $img.Name
+        Copy-Item -Path $img.FullName -Destination $dest -Force
+        Write-Host "  Copied: $($img.Name)"
+    }
 }
 
 # Install each subfolder (e.g. Photography Portfolio, SBN) as a separate preset group
