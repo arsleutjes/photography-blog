@@ -13,7 +13,7 @@ s = {
 
                                 -- Image watermark content
                                 kind = "image",
-                                imagePath = "D:\\Pictures\\Watermarks\\Survivalrun Bond\\LogoSBN-Kleur-def.png",
+                                imagePath = "LogoSBN-Kleur-def.png",
                                 text = "",
                                 textFontName = "Adobe Clean-Regular",
                                 textHorizontalAlignment = "left",
