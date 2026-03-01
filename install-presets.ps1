@@ -49,11 +49,26 @@ function Install-Presets {
     }
 
     # Copy any image files (e.g. logos) alongside the presets
-    $images = Get-ChildItem -Path $Source -Include "*.png","*.jpg","*.jpeg","*.svg" -File
+    $images = Get-ChildItem -Path "$Source\*" -Include "*.png","*.jpg","*.jpeg","*.svg" -File
     foreach ($img in $images) {
         $dest = Join-Path $Destination $img.Name
         Copy-Item -Path $img.FullName -Destination $dest -Force
         Write-Host "  Copied: $($img.Name)"
+    }
+
+    # Replace {{LOGO_PATH}} placeholder in copied lrtemplate files with the absolute image path
+    foreach ($file in Get-ChildItem -Path $Destination -Filter "*.lrtemplate") {
+        $text = [System.IO.File]::ReadAllText($file.FullName)
+        if ($text -match '\{\{LOGO_PATH\}\}') {
+            # Find the first image in the destination to use as the logo path
+            $logoFile = Get-ChildItem -Path "$Destination\*" -Include "*.png","*.jpg","*.jpeg","*.svg" -File | Select-Object -First 1
+            if ($logoFile) {
+                $escapedPath = $logoFile.FullName -replace '\\', '\\\\'
+                $text = $text -replace '\{\{LOGO_PATH\}\}', $escapedPath
+                [System.IO.File]::WriteAllText($file.FullName, $text, [System.Text.UTF8Encoding]::new($false))
+                Write-Host "  Resolved: $($file.Name) -> $($logoFile.FullName)"
+            }
+        }
     }
 }
 

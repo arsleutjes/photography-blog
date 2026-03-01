@@ -13,7 +13,7 @@ s = {
 
         -- Image watermark content
         kind = "image",
-        imagePath = "LogoSBN-Kleur-def.png",
+        imagePath = "{{LOGO_PATH}}",
         text = "",
         textFontName = "Adobe Clean-Regular",
         textHorizontalAlignment = "left",
