@@ -36,6 +36,38 @@
 - In `Catalog Settings > Backups`, set `Back up catalog` to `Every time Lightroom exits`.
 - The live catalog stays on `C:`; these catalog backups on `D:` are included in the monthly `backup.ps1` run.
 
+### Installing presets
+
+Run the install script to copy all presets to the correct Lightroom Classic locations:
+
+```powershell
+pwsh ./install-presets.ps1
+```
+
+The script iterates over every subfolder under `Export Presets\` and `Watermark Presets\` and copies them into the paths below. Restart Lightroom Classic after running it.
+
+#### Windows paths (copy/paste into File Explorer)
+
+**Export Presets**
+
+```text
+C:\Users\<YourUser>\AppData\Roaming\Adobe\Lightroom\Export Presets\User Presets
+```
+
+```text
+%APPDATA%\Adobe\Lightroom\Export Presets\User Presets
+```
+
+**Watermark Presets**
+
+```text
+C:\Users\<YourUser>\AppData\Roaming\Adobe\Lightroom\Watermarks
+```
+
+```text
+%APPDATA%\Adobe\Lightroom\Watermarks
+```
+
 ## Monthly backup
 
 1. Connect and verify `E:` is available.

@@ -1,13 +1,12 @@
 # Install Lightroom Classic presets from this repository to their correct locations.
 
 $scriptDir = $PSScriptRoot
-$presetsRoot = Join-Path $scriptDir "Photography Portfolio"
 
-$exportPresetsSource    = Join-Path $presetsRoot "Export Presets"
-$watermarkPresetsSource = Join-Path $presetsRoot "Watermark Presets"
+$exportPresetsSourceRoot    = Join-Path $scriptDir "Export Presets"
+$watermarkPresetsSourceRoot = Join-Path $scriptDir "Watermark Presets"
 
-$exportPresetsDest    = Join-Path $env:APPDATA "Adobe\Lightroom\Export Presets\User Presets"
-$watermarkPresetsDest = Join-Path $env:APPDATA "Adobe\Lightroom\Watermarks"
+$exportPresetsDestRoot    = Join-Path $env:APPDATA "Adobe\Lightroom\Export Presets\User Presets"
+$watermarkPresetsDestRoot = Join-Path $env:APPDATA "Adobe\Lightroom\Watermarks"
 
 function Install-Presets {
     param (
@@ -44,7 +43,15 @@ function Install-Presets {
     }
 }
 
-Install-Presets -Source $exportPresetsSource    -Destination $exportPresetsDest    -Label "Export Presets"
-Install-Presets -Source $watermarkPresetsSource -Destination $watermarkPresetsDest -Label "Watermark Presets"
+# Install each subfolder (e.g. Photography Portfolio, SBN) as a separate preset group
+foreach ($group in Get-ChildItem -Path $exportPresetsSourceRoot -Directory) {
+    $dest = Join-Path $exportPresetsDestRoot $group.Name
+    Install-Presets -Source $group.FullName -Destination $dest -Label "Export Presets\$($group.Name)"
+}
+
+foreach ($group in Get-ChildItem -Path $watermarkPresetsSourceRoot -Directory) {
+    $dest = Join-Path $watermarkPresetsDestRoot $group.Name
+    Install-Presets -Source $group.FullName -Destination $dest -Label "Watermark Presets\$($group.Name)"
+}
 
 Write-Host "`nDone. Restart Lightroom Classic for the presets to appear."
