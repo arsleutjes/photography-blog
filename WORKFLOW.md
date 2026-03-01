@@ -28,7 +28,7 @@
 - In Lightroom Classic Import, use `D:\Pictures\Raw` as the destination.
 
 ### Lightroom Sync setting
-- Important: In `Edit > Preferences > Lightroom Sync`, under `Location`, set `Specify location for Lightroom's Synced images` to `D:\Pictures\Raw\Mobile Downloads.lrdata\`.
+- Important: In `Edit > Preferences > Lightroom Sync`, under `Location`, set `Specify location for Lightroom's Synced images` to `D:\Pictures\Lightroom\Mobile Downloads.lrdata\`.
 
 ### Metadata and backups
 - Enable writing metadata changes to XMP in Lightroom Classic Catalog Settings.
