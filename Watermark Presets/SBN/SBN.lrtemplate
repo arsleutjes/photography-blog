@@ -14,32 +14,12 @@ s = {
         -- Image watermark content
         kind = "image",
         imagePath = "{{LOGO_PATH}}",
-        text = "",
-        textFontName = "Adobe Clean-Regular",
-        textHorizontalAlignment = "left",
-        textVerticalAlignment = "top",
-        textScalable = true,
 
         -- Sizing and opacity
         sizeKind = "relative",
         sizeRelativeAmount = 0.16,
         opacity = 1,
         orientation = "AB",
-
-        -- Text colour
-        textColorRed = 1,
-        textColorGreen = 1,
-        textColorBlue = 1,
-
-        -- Text shadow
-        textShadowEnabled = true,
-        textShadowColorRed = 0,
-        textShadowColorGreen = 0,
-        textShadowColorBlue = 0,
-        textShadowOpacity = 0.8,
-        textShadowAngle = 270,
-        textShadowOffset = 0.1,
-        textShadowRadius = 0.2,
       },
     },
   },
