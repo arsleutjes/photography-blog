@@ -27,6 +27,12 @@ function Install-Presets {
     if (-not (Test-Path $Destination)) {
         New-Item -ItemType Directory -Path $Destination -Force | Out-Null
         Write-Host "  Created destination folder."
+    } else {
+        $old = Get-ChildItem -Path $Destination -Filter "*.lrtemplate"
+        foreach ($f in $old) {
+            Remove-Item $f.FullName -Force
+            Write-Host "  Removed: $($f.Name)"
+        }
     }
 
     $files = Get-ChildItem -Path $Source -Filter "*.lrtemplate"
