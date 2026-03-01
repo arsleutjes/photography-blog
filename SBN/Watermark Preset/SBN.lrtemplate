@@ -6,33 +6,37 @@ s = {
 	value = {
 		items = {
 			{
-				anchor = "topleft",
-				horizontalPadding = 0.03,
-				imagePath = "D:\\Pictures\\Watermarks\\Survivalrun Bond\\LogoSBN-Kleur-def.png",
-				kind = "image",
-				opacity = 1,
-				orientation = "AB",
-				sizeKind = "relative",
-				sizeRelativeAmount = 0.16,
-				text = "",
-				textColorBlue = 1,
-				textColorGreen = 1,
-				textColorRed = 1,
-				textFontName = "Adobe Clean-Regular",
-				textHorizontalAlignment = "left",
-				textScalable = true,
-				textShadowAngle = 270,
-				textShadowColorBlue = 0,
-				textShadowColorGreen = 0,
-				textShadowColorRed = 0,
-				textShadowEnabled = true,
-				textShadowOffset = 0.1,
-				textShadowOpacity = 0.8,
-				textShadowRadius = 0.2,
-				textVerticalAlignment = "top",
-				verticalPadding = 0.03,
-			},
-		},
-	},
-	version = 0,
-}
+                                -- Position
+                                anchor = "topleft",
+                                horizontalPadding = 0.03,
+                                verticalPadding = 0.03,
+
+                                -- Image watermark content
+                                kind = "image",
+                                imagePath = "D:\\Pictures\\Watermarks\\Survivalrun Bond\\LogoSBN-Kleur-def.png",
+                                text = "",
+                                textFontName = "Adobe Clean-Regular",
+                                textHorizontalAlignment = "left",
+                                textVerticalAlignment = "top",
+                                textScalable = true,
+
+                                -- Sizing and opacity
+                                sizeKind = "relative",
+                                sizeRelativeAmount = 0.16,
+                                opacity = 1,
+                                orientation = "AB",
+
+                                -- Text colour
+                                textColorRed = 1,
+                                textColorGreen = 1,
+                                textColorBlue = 1,
+
+                                -- Text shadow
+                                textShadowEnabled = true,
+                                textShadowColorRed = 0,
+                                textShadowColorGreen = 0,
+                                textShadowColorBlue = 0,
+                                textShadowOpacity = 0.8,
+                                textShadowAngle = 270,
+                                textShadowOffset = 0.1,
+                                textShadowRadius = 0.2,

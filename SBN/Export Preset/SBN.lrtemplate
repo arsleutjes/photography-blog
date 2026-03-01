@@ -1,68 +1,96 @@
 s = {
-	id = "47CA0964-0BBF-4B7A-A131-09B442AB2E4D",
-	internalName = "SBN",
-	title = "SBN",
-	type = "Export",
-	value = {
-		contentCredentials_include_connectedAccounts = false,
-		contentCredentials_include_editsAndActivity = true,
-		contentCredentials_include_producer = false,
-		contentCredentials_include_status = "exclude",
-		embeddedMetadataOption = "all",
-		enableHDRDisplay = false,
-		exportServiceProvider = "com.adobe.ag.export.optical-media",
-		exportServiceProviderTitle = "CD/DVD",
-		export_bitDepth = 16,
-		export_colorSpace = "sRGB",
-		export_useParentFolder = false,
-		export_videoFileHandling = "include",
-		export_videoFormat = "4e49434b-4832-3634-fbfb-fbfbfbfbfbfb",
-		export_videoPreset = "original",
-		extensionCase = "lowercase",
-		format = "JPEG",
-		includeFaceTagsAsKeywords = true,
-		includeFaceTagsInIptc = true,
-		includeVideoFiles = true,
-		initialSequenceNumber = 1,
-		jpeg_limitSize = 5000,
-		jpeg_quality = 1,
-		jpeg_useLimitSize = true,
-		markedPresets = {
-		},
-		maximumCompatibility = true,
-		metadata_keywordOptions = "flat",
-		outputSharpeningLevel = 2,
-		outputSharpeningMedia = "screen",
-		outputSharpeningOn = false,
-		removeFaceMetadata = true,
-		removeLocationMetadata = true,
-		renamingTokensOn = false,
-		selectedTextFontFamily = "Adobe Clean Regular",
-		selectedTextFontSize = 12,
-		size_doConstrain = false,
-		size_percentage = 100,
-		size_resolution = 300,
-		size_resolutionUnits = "inch",
-		tokenCustomString = "",
-		tokens = "{{image_name}}",
-		tokensArchivedToString2 = {
-			{
-				menu = {
-					{
-						title = "Filename",
-						value = "image_name",
-					},
-					{
-						title = "Filename number suffix",
-						value = "image_filename_number_suffix",
-					},
-				},
-				title = "Filename",
-				value = "image_name",
-			},
-		},
-		useWatermark = true,
-		watermarking_id = "8BA04A23-AC61-48D0-B097-77BF23342024",
-	},
-	version = 0,
+        id = "47CA0964-0BBF-4B7A-A131-09B442AB2E4D",
+        internalName = "SBN",
+        title = "SBN",
+        type = "Export",
+        value = {
+                -- General
+                collisionHandling = "ask",
+
+                -- Content credentials
+                contentCredentials_include_connectedAccounts = false,
+                contentCredentials_include_editsAndActivity = true,
+                contentCredentials_include_producer = false,
+                contentCredentials_include_status = "exclude",
+
+                -- Metadata embedding
+                embeddedMetadataOption = "all",
+
+                -- Compatibility
+                enableHDRDisplay = false,
+
+                -- Export destination
+                exportServiceProvider = "com.adobe.ag.export.file",
+                exportServiceProviderTitle = "Hard Drive",
+                export_destinationPathPrefix = "",
+                export_destinationPathSuffix = "",
+                export_destinationType = "chooseLater",
+                export_postProcessing = "doNothing",
+                export_useParentFolder = false,
+                export_useSubfolder = false,
+
+                -- Export video
+                export_videoFileHandling = "include",
+                export_videoFormat = "4e49434b-4832-3634-fbfb-fbfbfbfbfbfb",
+                export_videoPreset = "original",
+
+                -- File settings
+                export_bitDepth = 16,
+                export_colorSpace = "sRGB",
+                extensionCase = "uppercase",
+                format = "JPEG",
+                jpeg_limitSize = 5000,
+                jpeg_quality = 1,
+                jpeg_useLimitSize = true,
+
+                -- Face tags and media
+                includeFaceTagsAsKeywords = false,
+                includeFaceTagsInIptc = false,
+                includeVideoFiles = true,
+
+                -- Naming
+                initialSequenceNumber = 1,
+                renamingTokensOn = false,
+                tokenCustomString = "",
+                tokens = "{{image_name}}",
+                tokensArchivedToString2 = "{{image_name}}",
+
+                -- Preset markers
+                markedPresets = {
+                },
+
+                -- Compatibility and metadata
+                maximumCompatibility = true,
+                metadata_keywordOptions = "flat",
+
+                -- Output sharpening
+                outputSharpeningLevel = 2,
+                outputSharpeningMedia = "screen",
+                outputSharpeningOn = false,
+
+                -- Reimport
+                reimportExportedPhoto = false,
+                reimport_stackWithOriginal = false,
+                reimport_stackWithOriginal_position = "below",
+
+                -- Privacy
+                removeFaceMetadata = true,
+                removeLocationMetadata = true,
+
+                -- Text options
+                selectedTextFontFamily = "Adobe Clean Regular",
+                selectedTextFontSize = 12,
+
+                -- Resize
+                size_doConstrain = false,
+                size_doNotEnlarge = true,
+                size_percentage = 100,
+                size_resolution = 300,
+                size_resolutionUnits = "inch",
+
+                -- Watermark
+                useWatermark = true,
+                watermarking_id = "8BA04A23-AC61-48D0-B097-77BF23342024",
+        },
+        version = 0,
 }
