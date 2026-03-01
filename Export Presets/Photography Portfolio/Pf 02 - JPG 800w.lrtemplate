@@ -1,99 +1,99 @@
 s = {
-	id = "a1b2c3d4-e5f6-7890-ab12-cd34ef56ab12",
-	internalName = "Pf Photography Portfolio — 02 JPG 800w",
-	title = "Pf 02 - JPG 800w",
-	type = "Export",
-	value = {
-		-- General
-		collisionHandling = "ask",
+  id = "a1b2c3d4-e5f6-7890-ab12-cd34ef56ab12",
+  internalName = "Pf Photography Portfolio — 02 JPG 800w",
+  title = "Pf 02 - JPG 800w",
+  type = "Export",
+  value = {
+    -- General
+    collisionHandling = "ask",
 
-		-- Content credentials
-		contentCredentials_include_connectedAccounts = false,
-		contentCredentials_include_editsAndActivity = true,
-		contentCredentials_include_producer = false,
-		contentCredentials_include_status = "exclude",
+    -- Content credentials
+    contentCredentials_include_connectedAccounts = false,
+    contentCredentials_include_editsAndActivity = true,
+    contentCredentials_include_producer = false,
+    contentCredentials_include_status = "exclude",
 
-		-- Metadata embedding
-		embeddedMetadataOption = "all",
+    -- Metadata embedding
+    embeddedMetadataOption = "all",
 
-		-- Compatibility
-		enableHDRDisplay = false,
+    -- Compatibility
+    enableHDRDisplay = false,
 
-		-- Export destination
-		exportServiceProvider = "com.adobe.ag.export.file",
-		exportServiceProviderTitle = "Hard Drive",
-		export_destinationPathPrefix = "",
-		export_destinationPathSuffix = "",
-		export_destinationType = "chooseLater",
-		export_postProcessing = "doNothing",
-		export_useParentFolder = false,
-		export_useSubfolder = false,
+    -- Export destination
+    exportServiceProvider = "com.adobe.ag.export.file",
+    exportServiceProviderTitle = "Hard Drive",
+    export_destinationPathPrefix = "",
+    export_destinationPathSuffix = "",
+    export_destinationType = "chooseLater",
+    export_postProcessing = "doNothing",
+    export_useParentFolder = false,
+    export_useSubfolder = false,
 
-		-- Export video
-		export_videoFileHandling = "include",
-		export_videoFormat = "4e49434b-4832-3634-fbfb-fbfbfbfbfbfb",
-		export_videoPreset = "original",
+    -- Export video
+    export_videoFileHandling = "include",
+    export_videoFormat = "4e49434b-4832-3634-fbfb-fbfbfbfbfbfb",
+    export_videoPreset = "original",
 
-		-- File settings
-		export_bitDepth = 16,
-		export_colorSpace = "sRGB",
-		extensionCase = "lowercase",
-		format = "JPEG",
-		jpeg_limitSize = 100,
-		jpeg_quality = 0.85,
-		jpeg_useLimitSize = false,
+    -- File settings
+    export_bitDepth = 16,
+    export_colorSpace = "sRGB",
+    extensionCase = "lowercase",
+    format = "JPEG",
+    jpeg_limitSize = 100,
+    jpeg_quality = 0.85,
+    jpeg_useLimitSize = false,
 
-		-- Face tags and media
-		includeFaceTagsAsKeywords = false,
-		includeFaceTagsInIptc = false,
-		includeVideoFiles = true,
+    -- Face tags and media
+    includeFaceTagsAsKeywords = false,
+    includeFaceTagsInIptc = false,
+    includeVideoFiles = true,
 
-		-- Naming
-		initialSequenceNumber = 1,
-		renamingTokensOn = true,
-		tokenCustomString = "",
-		tokens = "{{image_name}}-800w",
-		tokensArchivedToString2 = "{{image_name}}-800w",
+    -- Naming
+    initialSequenceNumber = 1,
+    renamingTokensOn = true,
+    tokenCustomString = "",
+    tokens = "{{image_name}}-800w",
+    tokensArchivedToString2 = "{{image_name}}-800w",
 
-		-- Preset markers
-		markedPresets = {
-		},
+    -- Preset markers
+    markedPresets = {
+    },
 
-		-- Compatibility and metadata
-		maximumCompatibility = true,
-		metadata_keywordOptions = "flat",
+    -- Compatibility and metadata
+    maximumCompatibility = true,
+    metadata_keywordOptions = "flat",
 
-		-- Output sharpening
-		outputSharpeningLevel = 2,
-		outputSharpeningMedia = "screen",
-		outputSharpeningOn = true,
+    -- Output sharpening
+    outputSharpeningLevel = 2,
+    outputSharpeningMedia = "screen",
+    outputSharpeningOn = true,
 
-		-- Reimport
-		reimportExportedPhoto = false,
-		reimport_stackWithOriginal = false,
-		reimport_stackWithOriginal_position = "below",
+    -- Reimport
+    reimportExportedPhoto = false,
+    reimport_stackWithOriginal = false,
+    reimport_stackWithOriginal_position = "below",
 
-		-- Privacy
-		removeFaceMetadata = true,
-		removeLocationMetadata = true,
+    -- Privacy
+    removeFaceMetadata = true,
+    removeLocationMetadata = true,
 
-		-- Text options
-		selectedTextFontFamily = "Adobe Clean Regular",
-		selectedTextFontSize = 12,
+    -- Text options
+    selectedTextFontFamily = "Adobe Clean Regular",
+    selectedTextFontSize = 12,
 
-		-- Resize
-		size_doConstrain = true,
-		size_doNotEnlarge = true,
-		size_maxHeight = 9999,
-		size_maxWidth = 800,
-		size_resizeType = "wh",
-		size_resolution = 240,
-		size_resolutionUnits = "inch",
-		size_units = "pixels",
+    -- Resize
+    size_doConstrain = true,
+    size_doNotEnlarge = true,
+    size_maxHeight = 9999,
+    size_maxWidth = 800,
+    size_resizeType = "wh",
+    size_resolution = 240,
+    size_resolutionUnits = "inch",
+    size_units = "pixels",
 
-		-- Watermark
-		useWatermark = true,
-		watermarking_id = "6CAF5308-D0C0-4932-826B-B26C523D4A16",
-	},
-	version = 0,
+    -- Watermark
+    useWatermark = true,
+    watermarking_id = "6CAF5308-D0C0-4932-826B-B26C523D4A16",
+  },
+  version = 0,
 }

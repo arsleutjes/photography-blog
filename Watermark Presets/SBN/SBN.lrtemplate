@@ -1,42 +1,47 @@
 s = {
-	id = "8BA04A23-AC61-48D0-B097-77BF23342024",
-	internalName = "SBN",
-	title = "SBN",
-	type = "WatermarkingPreset",
-	value = {
-		items = {
-			{
-                                -- Position
-                                anchor = "topleft",
-                                horizontalPadding = 0.03,
-                                verticalPadding = 0.03,
+  id = "8BA04A23-AC61-48D0-B097-77BF23342024",
+  internalName = "SBN",
+  title = "SBN",
+  type = "WatermarkingPreset",
+  value = {
+    items = {
+      {
+        -- Position
+        anchor = "topleft",
+        horizontalPadding = 0.03,
+        verticalPadding = 0.03,
 
-                                -- Image watermark content
-                                kind = "image",
-                                imagePath = "LogoSBN-Kleur-def.png",
-                                text = "",
-                                textFontName = "Adobe Clean-Regular",
-                                textHorizontalAlignment = "left",
-                                textVerticalAlignment = "top",
-                                textScalable = true,
+        -- Image watermark content
+        kind = "image",
+        imagePath = "LogoSBN-Kleur-def.png",
+        text = "",
+        textFontName = "Adobe Clean-Regular",
+        textHorizontalAlignment = "left",
+        textVerticalAlignment = "top",
+        textScalable = true,
 
-                                -- Sizing and opacity
-                                sizeKind = "relative",
-                                sizeRelativeAmount = 0.16,
-                                opacity = 1,
-                                orientation = "AB",
+        -- Sizing and opacity
+        sizeKind = "relative",
+        sizeRelativeAmount = 0.16,
+        opacity = 1,
+        orientation = "AB",
 
-                                -- Text colour
-                                textColorRed = 1,
-                                textColorGreen = 1,
-                                textColorBlue = 1,
+        -- Text colour
+        textColorRed = 1,
+        textColorGreen = 1,
+        textColorBlue = 1,
 
-                                -- Text shadow
-                                textShadowEnabled = true,
-                                textShadowColorRed = 0,
-                                textShadowColorGreen = 0,
-                                textShadowColorBlue = 0,
-                                textShadowOpacity = 0.8,
-                                textShadowAngle = 270,
-                                textShadowOffset = 0.1,
-                                textShadowRadius = 0.2,
+        -- Text shadow
+        textShadowEnabled = true,
+        textShadowColorRed = 0,
+        textShadowColorGreen = 0,
+        textShadowColorBlue = 0,
+        textShadowOpacity = 0.8,
+        textShadowAngle = 270,
+        textShadowOffset = 0.1,
+        textShadowRadius = 0.2,
+      },
+    },
+  },
+  version = 0,
+}

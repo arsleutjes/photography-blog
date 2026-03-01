@@ -1,46 +1,46 @@
 s = {
-	id = "6CAF5308-D0C0-4932-826B-B26C523D4A16",
-	internalName = "Pf Arwin Sleutjes",
-	title = "Pf Arwin Sleutjes",
-	type = "WatermarkingPreset",
-	value = {
-		items = {
-			{
-				-- Position
-				anchor = "bottomright",
-				horizontalPadding = 0.03,
-				verticalPadding = 0.03,
+  id = "6CAF5308-D0C0-4932-826B-B26C523D4A16",
+  internalName = "Pf Arwin Sleutjes",
+  title = "Pf Arwin Sleutjes",
+  type = "WatermarkingPreset",
+  value = {
+    items = {
+      {
+        -- Position
+        anchor = "bottomright",
+        horizontalPadding = 0.03,
+        verticalPadding = 0.03,
 
-				-- Text watermark content
-				kind = "text",
-				text = "© Arwin Sleutjes",
-				textFontName = "Adobe Clean-Regular",
-				textHorizontalAlignment = "right",
-				textVerticalAlignment = "top",
-				textScalable = true,
+        -- Text watermark content
+        kind = "text",
+        text = "© Arwin Sleutjes",
+        textFontName = "Adobe Clean-Regular",
+        textHorizontalAlignment = "right",
+        textVerticalAlignment = "top",
+        textScalable = true,
 
-				-- Sizing and opacity
-				sizeKind = "relative",
-				sizeRelativeAmount = 0.1,
-				opacity = 0.5,
-				orientation = "AB",
+        -- Sizing and opacity
+        sizeKind = "relative",
+        sizeRelativeAmount = 0.1,
+        opacity = 0.5,
+        orientation = "AB",
 
-				-- Text colour
-				textColorRed = 1,
-				textColorGreen = 1,
-				textColorBlue = 1,
+        -- Text colour
+        textColorRed = 1,
+        textColorGreen = 1,
+        textColorBlue = 1,
 
-				-- Text shadow
-				textShadowEnabled = false,
-				textShadowColorRed = 0,
-				textShadowColorGreen = 0,
-				textShadowColorBlue = 0,
-				textShadowOpacity = 0.8,
-				textShadowAngle = 270,
-				textShadowOffset = 0.1,
-				textShadowRadius = 0.2,
-			},
-		},
-	},
-	version = 0,
+        -- Text shadow
+        textShadowEnabled = false,
+        textShadowColorRed = 0,
+        textShadowColorGreen = 0,
+        textShadowColorBlue = 0,
+        textShadowOpacity = 0.8,
+        textShadowAngle = 270,
+        textShadowOffset = 0.1,
+        textShadowRadius = 0.2,
+      },
+    },
+  },
+  version = 0,
 }
